@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+
+  <style>
+    body {
+      background: linear-gradient(#ffe6eb, #fff);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      color: #ff3366;
+      font-size: 36px;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    button {
+      margin: 15px;
+      padding: 12px 26px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background-color: #ff5c8a;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff3366;
+    }
+
+    #box {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+      display: none;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hey ❤️</h1>
+
+  <p>I made this little website just for you.</p>
+  <p>Because sometimes words are not enough…</p>
+
+  <button onclick="showCompliment()">Why I like you 💖</button>
+  <button onclick="showSorry()"> hi </button>
+
+  <div id="box"></div>
+
+  <script>
+    function showCompliment() {
+      document.getElementById("box").style.display = "block";
+      document.getElementById("box").innerHTML =
+        "You make normal moments feel special.<br><br>" +
+        "Your smile has a way of fixing bad days.<br><br>" +
+        "And honestly… I’m lucky to have you prachi 💕";
+    }
+
+    function showSorry() {
+      document.getElementById("box").style.display = "block";
+      document.getElementById("box").innerHTML =
+        "I know I mess up sometimes.<br><br>" +
+        "I may not always say the right things,<br>" +
+        "but I never mean to hurt you.<br><br>" +
+        "I care more than I show 🤍";
+    }
+  </script>
+
+</body>
+</html>
